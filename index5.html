@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="links">
+      <a href="Presentacion.html">Inicio</a>
+      <a href="habitaciones.html">Habitaciones</a>
+      <a href="gastronomia.html">Gastronomia</a>
+      <a href="deportes.html">Recreación</a>
+      <div class="A"><a href="serviciosExtra.html">Servicios</a></div>
+  </div>
+    <div class="padre">
+
+        <div class="header">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+        </div>
+    </div>
+    <div class="contenido">
+        <h1>SERVICIOS EXTRA</h1>
+        <p>En nuestro hotel nos esforzamos por ofrecer mucho más que una estadía confortable. Pensando en la comodidad y
+            satisfacción de cada huésped, ponemos a su disposición una variedad de servicios adicionales que
+            complementan la experiencia. Desde atención personalizada en la habitación hasta espacios de relajación y
+            actividades exclusivas, cada detalle ha sido diseñado para brindar bienestar, confort y momentos
+            inolvidables durante su estancia.</p>
+    </div>
+
+    <div class="cuerpo">
+        <div class="servicio-1">
+            <img src="yate.jpg">
+            <h1>Paseo en Yate o Embarcación Privada</h1>
+            <p>Atención personalizada directamente en la habitación del huésped, ofreciendo alimentos, bebidas y
+                cualquier requerimiento especial con comodidad y discreción. Ideal para quienes desean disfrutar de una
+                experiencia privada sin salir de su habitación.</p>
+        </div>
+        <div class="servicio-2">
+            <img src="room-service.png.webp">
+            <h1>Servicio a la habitación (Room Service)</h1>
+            <p>Experiencia exclusiva para disfrutar del mar y el paisaje en un yate privado. Perfecto para relajarse,
+                celebrar ocasiones especiales o realizar excursiones personalizadas</p>
+        </div>
+        <div class="servicio-3">
+            <img src="lavanderia.jpg">
+            <h1>Lavandería y Tintorería</h1>
+            <p>Servicio profesional de lavado, secado y planchado de ropa. Brinda a los huéspedes la tranquilidad de
+                tener sus prendas siempre limpias y en perfecto estado durante su estancia.</p>
+        </div>
+        <div class="servicio-4">
+            <img src="sauna.webp">
+            <h1>Sauna</h1>
+            <p>Espacio de bienestar diseñado para relajar el cuerpo y la mente, favoreciendo la eliminación de toxinas y
+                el descanso profundo. Ideal para revitalizarse después de un día de actividades.</p>
+        </div>
+        <div class="servicio-5">
+            <img src="yacuzzi.webp">
+            <h1>Jacuzzi al aire libre con vista panorámica</h1>
+            <p>Un espacio de relajación con hidromasaje, rodeado de un ambiente exclusivo y vistas espectaculares al
+                mar. Combina descanso, confort y lujo en un solo lugar.</p>
+        </div>
+        <div class="servicio-6">
+            <img src="spa.jpg">
+            <h1>Spa y Masajes</h1>
+            <p>Zona de tratamientos corporales y faciales que incluyen masajes relajantes, terapias de bienestar y
+                cuidados especiales para cuerpo y mente. Un refugio de tranquilidad y renovación total.</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    .padre {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('bar-1.jpg');
+        max-width: 1800px;
+        height: 500px;
+        background-size: cover;
+    }
+    .header {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        padding: 20px 10px 20px 10px;
+    }
+
+    img {
+        width: 500px;
+        height: auto;
+        position: relative;
+        top: -30px;
+    }
+
+    .contenido {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 25px 20px 25px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .contenido h1 {
+        margin: 10px 0px 0px 0px;
+        font-size: 40px;
+        padding: 0px 300px 10px 300px;
+        color: #c09f34d5;
+    }
+
+    .contenido p {
+        margin: 0;
+        font-size: 18px;
+        padding: 0px 300px 0px 300px;
+    }
+
+    .cuerpo {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 20px 25px 20px 25px;
+        margin-top: 50px;
+    }
+
+    .servicio-1 img, .servicio-2 img, .servicio-3 img, .servicio-4 img, .servicio-5 img, .servicio-6 img {
+        width: 450px;
+        height: 335px;
+        border-radius: 5px;
+    }
+
+    .servicio-1 p, .servicio-2 p, .servicio-3 p, .servicio-4 p, .servicio-5 p, .servicio-6 p {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+        padding: 10px 0px 0px 0px;
+        text-align: center;
+        margin: 0;
+        width: 450px;
+        position: relative;
+        top: -15px;
+        margin-bottom: 30px;
+    }
+
+    .servicio-1 h1, .servicio-2 h1, .servicio-3 h1, .servicio-4 h1, .servicio-5 h1, .servicio-6 h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        padding: 10px 0px 0px 0px;
+        text-align: center;
+        margin: 0;
+        width: 450px;
+        position: relative;
+        top: -20px;
+        color: #c09f34d5;
+    }
+      .links{
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 5px;
+  }
+  .links a{
+    color: #000000;
+    text-decoration: none;
+  }
+    .A a{
+    color: #b29146;
+    text-decoration: underline;
+  }
+</style>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="links">
+      <a href="Presentacion.html">Inicio</a>
+       <div class="A"><a href="habitaciones.html">Habitaciones</a></div>
+      <a href="gastronomia.html">Gastronomia</a>
+      <a href="deportes.html">Recreación</a>
+      <a href="serviciosExtra.html">Servicios</a>
+  </div>
+    <div class="padre">
+
+        <div class="header">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+        </div>
+    </div>
+        <div class="contenido">
+            <h1>HABITACIONES</h1>
+            <p>Nuestras habitaciones están diseñadas para brindar comodidad y descanso, con espacios modernos,
+                acogedores y totalmente equipados, pensados para que disfrutes de una estadía placentera.</p>
+        </div>
+    
+        <div class="cuerpo">
+            <div class="habi-1">
+                <img src="habitacion_1.avif">
+                <h1>Habitación Sol Naciente</h1>
+                <p>Estilo natural y elegante, equipada con cama king, sala pequeña y decoración con elementos en madera. Ofrece una atmósfera relajante con vistas al exterior.</p>
+            </div>
+            <div class="habi-2">
+                <img src="habitacion_2.webp">
+                <h1>Suite Imperial</h1>
+                <p>Espaciosa y elegante, con diseño moderno y ventanales panorámicos que ofrecen una vista espectacular. Equipada con cama king, escritorio, sillón y detalles decorativos de lujo.</p>
+            </div>
+            <div class="habi-3">
+                <img src="habitacion_3.webp">
+                <h1>Habitación Arena Dorada</h1>
+                <p>De estilo tropical y acogedor, con balcón privado hacia el mar. Incluye cama king, sofá, escritorio y decoración en tonos cálidos que resaltan el ambiente playero.</p>
+            </div>
+            <div class="habi-4">
+                <img src="habitacion_4.webp">
+                <h1>Suite Luna de Miel</h1>
+                <p>Romántica y sofisticada, con jacuzzi privado junto a un gran ventanal con vista al mar. Ideal para parejas, cuenta con cama king, minibar y detalles contemporáneos.</p>
+            </div>
+            <div class="habi-5">
+                <img src="habitacion_5.jpeg">
+                <h1>Habitación Platinum</h1>
+                <p>Moderna y funcional, con dos camas matrimoniales, decoración minimalista en tonos neutros y un gran ventanal que ilumina naturalmente con vista al mar</p>
+            </div>
+            <div class="habi-6">
+                <img src="habitacion_6.jpeg">
+                <h1>Suite Real</h1>
+                <p>Amplia y luminosa, con cama king, sofá pequeño, grandes ventanas y un espejo decorativo. El diseño mezcla madera y tonos tierra, creando un ambiente cálido y natural.</p>
+            </div>
+        </div>
+</body>
+
+</html>
+
+<style>
+    .padre {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('habitacion_7.jpg');
+        max-width: 2000px;
+        height: 500px;
+        background-size: cover;
+    }
+
+    .header {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        padding: 20px 10px 20px 10px;
+    }
+
+    img {
+        width: 500px;
+        height: auto;
+        position: relative;
+        top: -30px;
+    }
+
+    .contenido {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 25px 20px 25px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .contenido h1 {
+        margin: 10px 0px 0px 0px;
+        font-size: 40px;
+        padding: 0px 300px 10px 300px;
+        color: #c09f34d5;
+    }
+
+    .contenido p {
+        margin: 0;
+        font-size: 18px;
+        padding: 0px 300px 0px 300px;
+    }
+
+    .cuerpo {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 20px 25px 20px 25px;
+        margin-top: 50px;
+    }
+
+    .habi-4 img {
+        width: 450px;
+        height: 335px;
+        border-radius: 5px;
+    }
+    .habi-1 img, .habi-2 img, .habi-3 img, .habi-5 img, .habi-6 img {
+        width: 450px;
+        height: 335px;
+        border-radius: 5px;
+    }
+
+    .habi-1 p, .habi-2 p, .habi-3 p, .habi-4 p, .habi-5 p, .habi-6 p {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+        padding: 10px 0px 0px 0px;
+        text-align: center;
+        margin: 0;
+        width: 450px;
+        position: relative;
+        top: -15px;
+        margin-bottom: 30px;
+    }
+
+    .habi-1 h1, .habi-2 h1, .habi-3 h1, .habi-4 h1, .habi-5 h1, .habi-6 h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        padding: 10px 0px 0px 0px;
+        text-align: center;
+        margin: 0;
+        width: 450px;
+        position: relative;
+        top: -20px;
+        color: #c09f34d5;
+    }
+      .links{
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 5px;
+  }
+  .links a{
+    color: #000000;
+    text-decoration: none;
+  }
+    .A a{
+    color: #b29146;
+    text-decoration: underline;
+  }
+
+</style>

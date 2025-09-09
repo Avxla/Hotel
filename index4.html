@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+        <div class="links">
+      <a href="Presentacion.html">Inicio</a>
+      <a href="habitaciones.html">Habitaciones</a>
+      <a href="gastronomia.html">Gastronomia</a>
+      <div class="A"><a href="deportes.html">Recreación</a></div>
+      <a href="serviciosExtra.html">Servicios</a>
+  </div>
+    <div class="padre">
+        <div class="header">       
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+        </div>
+    </div>
+        <div class="contenido">
+            <h1>DEPORTES</h1>
+            <p>En nuestro hotel, entendemos que el deporte es sinónimo de bienestar, energía y diversión. Por eso, ofrecemos a nuestros huéspedes una variedad de actividades deportivas diseñadas para mantenerse activos durante su estadía, ya sea en espacios al aire libre o en instalaciones especialmente acondicionadas. Desde deportes individuales que fomentan la relajación y el equilibrio, hasta actividades en grupo que invitan a la competencia amistosa, cada experiencia está pensada para combinar descanso, salud y entretenimiento.</p>
+        </div>
+    
+        <div class="cuerpo">
+            <div class="dep-1">
+                <img src="futboll.jpg">
+                <h1>Futboll</h1>
+                <p>El hotel cuenta con una moderna cancha de fútbol ideal para disfrutar de partidos amistosos entre familiares y amigos. Un espacio perfecto para la recreación al aire libre, rodeado de naturaleza y con las condiciones adecuadas para practicar este deporte en un ambiente divertido y seguro.</p>
+            </div>
+            <div class="dep-2">
+                <img src="gym.jpg">
+                <h1>Gimnasio</h1>
+                <p>Para quienes desean mantenerse activos durante su estadía, el hotel ofrece un gimnasio equipado con bicicletas estáticas y máquinas de entrenamiento. Con una espectacular vista al mar, es el lugar perfecto para ejercitarse mientras se disfruta de un entorno relajante y motivador.</p>
+            </div>
+            <div class="dep-3">
+                <img src="piscina.jpg">
+                <h1>Natación</h1>
+                <p>Las amplias y elegantes piscinas del hotel son ideales tanto para el descanso como para la actividad física. Los huéspedes pueden nadar, practicar ejercicios acuáticos o simplemente relajarse en un ambiente tropical rodeado de palmeras y con acceso directo a la playa.</p>
+            </div>
+            <div class="dep-4">
+                <img src="pilates.jpg">
+                <h1>Pilates</h1>
+                <p>Disfruta de sesiones de Pilates con Reformer, una disciplina que combina fuerza, flexibilidad y control corporal mediante el uso de equipos especializados. Ideal para todos los niveles, estas clases ayudan a mejorar la postura, tonificar el cuerpo y reducir el estrés, en un ambiente tranquilo y elegante. ¡Perfecto para recargar energías durante tu estancia!</p>
+            </div>
+            <div class="dep-5">
+                <img src="tennis.webp">
+                <h1>Tenis</h1>
+                <p>Aprovecha nuestras canchas de tenis al aire libre rodeadas de naturaleza y excelente clima. Ya sea que seas principiante o avanzado, puedes jugar por diversión o mejorar tus habilidades. Contamos con clases, alquiler de equipos y espacios iluminados para jugar también por la noche.</p>
+            </div>
+            <div class="dep-6">
+                <img src="voley.jpg">
+                <h1>Voley Playa</h1>
+                <p>Vive la emoción del vóley de playa en nuestra cancha de arena. Es una actividad divertida, ideal para jugar en grupo y disfrutar al máximo del sol y el aire libre. Perfecta para todas las edades y niveles, ¡una excelente manera de combinar deporte y diversión!</p>
+            </div>
+        </div>
+</body>
+
+</html>
+
+<style>
+    .padre {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('dep.jpg');
+        max-width: 2000px;
+        height: 500px;
+        background-size: cover;
+    }
+
+    .header {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        padding: 20px 10px 20px 10px;
+    }
+
+    .logo img{
+        position: relative;
+        top: -40px;
+        right: 80px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: -30px;
+    }
+
+    .contenido {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 25px 20px 25px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .contenido h1 {
+        margin: 10px 0px 0px 0px;
+        font-size: 40px;
+        padding: 0px 300px 10px 300px;
+        color: #c09f34d5;
+    }
+
+    .contenido p {
+        margin: 0;
+        font-size: 18px;
+        padding: 0px 300px 0px 300px;
+    }
+
+    .cuerpo {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-top: 50px;
+    }
+
+    .dep-4 img {
+        width: 550px;
+        height: 335px;
+        border-radius: 5px;
+        
+    }
+    .dep-1 img, .dep-2 img, .dep-3 img, .dep-5 img, .dep-6 img {
+        width: 550px;
+        height: 335px;
+        border-radius: 5px;
+        
+    }
+
+    .dep-1 p, .dep-2 p, .dep-3 p, .dep-4 p, .dep-5 p, .dep-6 p {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+        padding: 10px 0px 0px 0px;
+        text-align: center;
+        margin: 0;
+        width: 550px;
+        position: relative;
+        top: -15px;
+        margin-bottom: 30px;
+    }
+
+    .dep-1 h1, .dep-2 h1, .dep-3 h1, .dep-4 h1, .dep-5 h1, .dep-6 h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 25px;
+        padding: 10px 0px 0px 0px;
+        text-align: center;
+        margin: 0;
+        width: 550px;
+        position: relative;
+        top: -20px;
+        color: #c09f34d5;
+    }
+      .links{
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 5px;
+  }
+  .links a{
+    color: #000000;
+    text-decoration: none;
+  }
+  .A a{
+    color: #b29146;
+    text-decoration: underline;
+  }
+/* RESPONSIVIDAD */
+@media (max-width: 1400px) {
+  .contenido h1 {
+    font-size: 35px;
+    padding: 0px 200px 10px 200px;
+  }
+  .contenido p {
+    font-size: 16px;
+    padding: 0px 200px 0px 200px;
+  }
+  .dep-1 img, .dep-2 img, .dep-3 img, .dep-4 img, .dep-5 img, .dep-6 img {
+    width: 350px;
+    
+  }
+   .dep-1 h1, .dep-2 h1, .dep-3 h1, .dep-4 h1, .dep-5 h1, .dep-6 h1{
+    width: 400px;
+  }
+  .dep-1 p, .dep-2 p, .dep-3 p, .dep-4 p, .dep-5 p, .dep-6 p{
+    width: 400px;
+  }
+.dep-1 img, .dep-2 img, .dep-3 img,
+  .dep-4 img, .dep-5 img, .dep-6 img {
+    width: 400px;
+  }
+}
+@media (max-width: 1200px) {
+  .contenido h1, .contenido p {
+    padding: 0px 100px;
+  }
+  .cuerpo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+    .dep-1 img, .dep-2 img, .dep-3 img, .dep-4 img, .dep-5 img, .dep-6 img {
+    width: 500px;
+    
+  }
+  .dep-1 h1, .dep-2 h1, .dep-3 h1, .dep-4 h1, .dep-5 h1, .dep-6 h1{
+    width: 500px;
+  }
+  .dep-1 p, .dep-2 p, .dep-3 p, .dep-4 p, .dep-5 p, .dep-6 p{
+    width: 500px;
+  }
+.dep-1 img, .dep-2 img, .dep-3 img,
+  .dep-4 img, .dep-5 img, .dep-6 img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .contenido h1 {
+    font-size: 30px;
+    padding: 0px 50px;
+  }
+  .contenido p {
+    font-size: 16px;
+    padding: 0px 50px;
+  }
+  .cuerpo {
+    grid-template-columns: 1fr;
+  }
+  .dep-1 img, .dep-2 img, .dep-3 img,
+  .dep-4 img, .dep-5 img, .dep-6 img {
+    width: 100%;
+    height: auto;
+  }
+  .dep-1 h1, .dep-2 h1, .dep-3 h1,
+  .dep-4 h1, .dep-5 h1, .dep-6 h1,
+  .dep-1 p, .dep-2 p, .dep-3 p,
+  .dep-4 p, .dep-5 p, .dep-6 p {
+    width: 100%;
+  }
+    .links {
+    flex-direction: row;
+    gap: 10px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .links {
+    flex-direction: row;
+    gap: 15px;
+    font-size: 18px;
+  }
+  .contenido h1 {
+    font-size: 24px;
+    padding: 0 20px;
+  }
+  .contenido p {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+  .logo img {
+    width: 350px;
+    position: static;
+    top: 0;
+    
+  }
+  .padre {
+    height: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contenido h1 {
+    font-size: 20px;
+  }
+  .contenido p {
+    font-size: 13px;
+  }
+  .links {
+    font-size: 16px;
+  }
+}
+
+</style>

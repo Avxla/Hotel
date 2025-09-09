@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="links">
+      <a href="Presentacion.html">Inicio</a>
+      <a href="habitaciones.html">Habitaciones</a>
+      <div class="A"><a href="gastronomia.html">Gastronomia</a></div>
+      <a href="deportes.html">Recreación</a>
+      <a href="serviciosExtra.html">Servicios</a>
+  </div>
+    <div class="padre">
+
+        <div class="header">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+        </div>
+    </div>
+    <div class="contenido">
+        <h1>GASTRONOMIA</h1>
+        <p>Nuestro propósito es acercarte a la magia de la cocina, desde los platos más sencillos y hogareños hasta propuestas innovadoras que sorprenderán tu paladar. Queremos que disfrutes, aprendas y descubras que cada bocado cuenta una historia.</p>
+    </div>
+
+    <div class="cuerpo">
+        <div class="servicio-1">
+            <img src="comida1.jpg">
+            <h1>Camarones del Trópico Picante</h1>
+            <p>Jugosos camarones salteados en una salsa tropical con toques de chile, ajo y el dulzor del maíz, acompañados de cebollines frescos. Un platillo vibrante que mezcla el sabor del mar con el calor caribeño.</p>
+        </div>
+        <div class="servicio-2">
+            <img src="comida2.jpg">
+            <h1>Banquete Costero</h1>
+            <p>Un festín de mar con pescado frito crujiente, arroz con coco, plátanos maduros, ensalada fresca y otros mariscos típicos de la costa. Perfecto para disfrutar con vista al mar y los pies en la arena.</p>
+        </div>
+        <div class="servicio-3">
+            <img src="comida3.jpg">
+            <h1>Conchas del Pacífico</h1>
+            <p>Delicadas conchas gratinadas con una mezcla de mariscos al ajillo, cubiertas por una salsa cremosa y ligeramente picante. Servidas con ensalada fresca para equilibrar cada bocado.</p>
+        </div>
+        <div class="servicio-4">
+            <img src="comida4.jpg">
+            <h1>Lamgosta Paraíso</h1>
+            <p>Langosta fresca asada al punto perfecto, aderezada con mantequilla de hierbas y servida con vegetales al vapor y cítricos. Un lujo tropical que captura la esencia del océano.</p>
+        </div>
+        <div class="servicio-5">
+            <img src="comida5.jpg">
+            <h1>Lomo Salteado Criollo</h1>
+            <p>Trozos de carne de res salteados al wok con cebolla, tomate y papas fritas, todo acompañado de arroz blanco. Una fusión peruana-china llena de sabor, textura y tradición.</p>
+        </div>
+        <div class="servicio-6">
+            <img src="comida6.jpg">
+            <h1>Pulpo Braseado al Estilo Mediterraneo</h1>
+            <p>Pulpo tierno braseado en aceite de oliva con especias mediterráneas, acompañado de papas, cebollitas glaseadas y vegetales asados. Una explosión de mar y tierra en cada bocado.</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    .padre {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('comida0.jpg');
+        max-width: 1800px;
+        height: 500px;
+        background-size: cover;
+    }
+    .header {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        padding: 20px 10px 20px 10px;
+    }
+
+    img {
+        width: 500px;
+        height: auto;
+        position: relative;
+        top: -30px;
+    }
+
+    .contenido {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 25px 20px 25px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .contenido h1 {
+        margin: 10px 0px 0px 0px;
+        font-size: 40px;
+        padding: 0px 300px 10px 300px;
+        color: #c09f34d5;
+    }
+
+    .contenido p {
+        margin: 0;
+        font-size: 18px;
+        padding: 0px 300px 0px 300px;
+    }
+
+    .cuerpo {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 20px 25px 20px 25px;
+        margin-top: 50px;
+    }
+
+    .servicio-1 img, .servicio-2 img, .servicio-3 img, .servicio-4 img, .servicio-5 img, .servicio-6 img {
+        width: 450px;
+        height: 335px;
+        border-radius: 5px;
+    }
+
+    .servicio-1 p, .servicio-2 p, .servicio-3 p, .servicio-4 p, .servicio-5 p, .servicio-6 p {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+        padding: 10px 0px 0px 0px;
+        text-align: center;
+        margin: 0;
+        width: 450px;
+        position: relative;
+        top: -15px;
+        margin-bottom: 30px;
+    }
+
+    .servicio-1 h1, .servicio-2 h1, .servicio-3 h1, .servicio-4 h1, .servicio-5 h1, .servicio-6 h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        padding: 10px 0px 0px 0px;
+        text-align: center;
+        margin: 0;
+        width: 450px;
+        position: relative;
+        top: -20px;
+        color: #c09f34d5;
+    }
+      .links{
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 5px;
+  }
+  .links a{
+    color: #000000;
+    text-decoration: none;
+  }
+    .A a{
+    color: #b29146;
+    text-decoration: underline;
+  }
+</style>
