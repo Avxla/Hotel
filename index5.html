@@ -78,7 +78,7 @@
 <style>
     .padre {
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('bar-1.jpg');
-        max-width: 1800px;
+        max-width: 100%;
         height: 500px;
         background-size: cover;
     }
@@ -101,7 +101,6 @@
         text-align: center;
         justify-content: center;
         flex-direction: column;
-        padding: 20px 25px 20px 25px;
         font-family: 'Times New Roman', Times, serif;
     }
 
@@ -123,7 +122,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
-        padding: 20px 25px 20px 25px;
+        justify-items: center;
         margin-top: 50px;
     }
 
@@ -172,4 +171,107 @@
     color: #b29146;
     text-decoration: underline;
   }
+   @media (max-width: 1400px) {
+  .contenido h1 {
+    font-size: 35px;
+    padding: 0px 200px 10px 200px;
+  }
+  .contenido p {
+    font-size: 16px;
+    padding: 0px 200px 0px 200px;
+  }
+  .servicio-1 img, .servicio-2 img, .servicio-3 img, .servicio-4 img, .servicio-5 img, .servicio-6 img {
+    width: 400px;
+    
+  }
+   .servicio-1 h1, .servicio-2 h1, .servicio-3 h1, .servicio-4 h1, .servicio-5 h1, .servicio-6 h1{
+    width: 400px;
+  }
+  .servicio-1 p, .servicio-2 p, .servicio-3 p, .servicio-4 p, .servicio-5 p, .servicio-6 p {
+    width: 400px;
+  }
+}
+@media (max-width: 1200px) {
+  .contenido h1, .contenido p {
+    padding: 0px 100px;
+  }
+  .cuerpo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+    .servicio-1 img, .servicio-2 img, .servicio-3 img, .servicio-4 img, .servicio-5 img, .servicio-6 img {
+    width: 500px;
+    
+  }
+  .servicio-1 h1, .servicio-2 h1, .servicio-3 h1, .servicio-4 h1, .servicio-5 h1, .servicio-6 h1{
+    width: 500px;
+  }
+  .servicio-1 p, .servicio-2 p, .servicio-3 p, .servicio-4 p, .servicio-5 p, .servicio-6 p {
+    width: 500px;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .contenido h1 {
+    font-size: 30px;
+    padding: 0px 50px;
+  }
+  .contenido p {
+    font-size: 16px;
+    padding: 0px 50px;
+  }
+  .cuerpo {
+    grid-template-columns: 1fr;
+  }
+.servicio-1 img, .servicio-2 img, .servicio-3 img, .servicio-4 img, .servicio-5 img, .servicio-6 img {
+    width: 100%;
+    height: auto;
+  }
+.servicio-1 h1, .servicio-2 h1, .servicio-3 h1, .servicio-4 h1, .servicio-5 h1, .servicio-6 h1,
+ .servicio-1 p, .servicio-2 p, .servicio-3 p, .servicio-4 p, .servicio-5 p, .servicio-6 p {
+    width: 100%;
+  }
+    .links {
+    flex-direction: row;
+    gap: 10px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .links {
+    flex-direction: row;
+    gap: 15px;
+    font-size: 18px;
+  }
+  .contenido h1 {
+    font-size: 24px;
+    padding: 0 20px;
+  }
+  .contenido p {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+  .logo img {
+    width: 350px;
+    position: static;
+    top: 0;
+    
+  }
+  .padre {
+    height: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contenido h1 {
+    font-size: 20px;
+  }
+  .contenido p {
+    font-size: 13px;
+  }
+  .links {
+    font-size: 16px;
+  }
+}
 </style>
