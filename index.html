@@ -67,8 +67,32 @@
     </div>
   </div>
 
-</body>
+<footer class="footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>LUXURY CROWN</h3>
+                <p>Disfruta de una experiencia única con vistas espectaculares y comodidad de lujo.</p>
+                <p><strong>Dirección:</strong> Calle Principal #123, Ciudad, País</p>
+                <p><strong>Teléfono:</strong> +57 123 456 7890</p>
+                <p><strong>Email:</strong> contacto@hoteluxury.com</p>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png"
+                            alt="Facebook"></a>
+                    <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"
+                            alt="Instagram"></a>
+                    <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
 
+        <div class="footer-bottom">
+            <p>&copy; 2025 Hotel Luxury Crown. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    </body>
 </html>
 <style>
   .padre {
@@ -92,6 +116,86 @@
   .derecha {
     font-size: 30px;
   }
+  .footer {
+        background-color: #1a1a1a;
+        color: #fff;
+
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 100px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .footer-info,
+    .footer-links,
+    .footer-social {
+
+        min-width: 250px;
+        margin: 10px;
+    }
+
+    .footer-info h3, .footer-social h4 {
+        font-size: 14px;
+        margin-bottom: 15px;
+        color: #ffd700;
+    }
+
+    .footer-info p {
+        font-size: 12px;
+        line-height: 1.6;
+        margin: 5px 0;
+    }
+
+    .footer-links ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-links ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer-links ul li a {
+        color: #fff;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    .footer-links ul li a:hover {
+        color: #ffd700;
+    }
+
+    .footer-social .social-icons a {
+        margin-right: 15px;
+        display: inline-block;
+        transition: transform 0.3s;
+    }
+
+    .footer-social .social-icons a:hover {
+        transform: scale(1.2);  
+    }
+
+    .social-icons img {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top:10px
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 30px;
+        border-top: 1px solid #333;
+        padding-top: 15px;
+        font-size: 14px;
+        color: #aaa;
+    }
 
   .derecha h1 {
     font-weight: bold;
@@ -102,6 +206,74 @@
     text-transform: uppercase;
 
   }
+  .footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    
+    font-family: 'Arial', sans-serif;
+    margin-top: 100px;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+.footer-info, .footer-links, .footer-social {
+   
+    min-width: 250px;
+    margin: 10px;
+}
+.footer-info h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffd700;
+}
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.footer-links ul li a:hover {
+    color: #ffd700;
+}
+.footer-social .social-icons a {
+    margin-right: 15px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+.footer-social .social-icons a:hover {
+    transform: scale(1.2);
+}
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #aaa;
+}
+@media(max-width: 768px){
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-info, .footer-links, .footer-social {
+        margin: 20px 0;
+    }
+}
 
   .reserva {
     max-width: 400px;
