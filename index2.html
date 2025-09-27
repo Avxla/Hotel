@@ -36,9 +36,9 @@
             <h1>Habitación Sol Naciente</h1>
             <p class="descripcion">Estilo natural y elegante, equipada con cama king, sala pequeña y decoración con
                 elementos en madera. Ofrece una atmósfera relajante con vistas al exterior.</p>
-            <p class="precio">$250.000 <span>/Noche</span></p>
+            <h2 class="precio">$250.000 <span>/Noche</span></h2>
             <div class="camas">
-                <p>🛏️ King Size Bed</p> <p>🛜 Free WiFi</p> <p>👥 2 Person</p>
+                <div class="p">🛏️ King Size Bed</div> <div class="p">🛜 Free WiFi</div> <div class="p">👥 2 Person</div>
             </div>
             <button>Reservar Ahora</button>
         </div>
@@ -48,9 +48,9 @@
             <h1>Suite Imperial</h1>
             <p class="descripcion">Espaciosa y elegante, con diseño moderno y ventanales panorámicos que ofrecen una
                 vista espectacular. Equipada con cama king, escritorio, sillón y detalles decorativos de lujo.</p>
-            <p class="precio">$300.000 <span>/Noche</span></p>
+            <h2 class="precio">$300.000 <span>/Noche</span></h2>
             <div class="camas">
-                <p>🛏️ King Size Bed</p> <p>🛜 Free WiFi</p> <p>👥 2 Person</p>
+                <div class="p">🛏️ King Size Bed</div> <div class="p">🛜 Free WiFi</div> <div class="p">👥 2 Person</div>
             </div>
             <button>Reservar Ahora</button>
         </div>
@@ -60,9 +60,9 @@
             <h1>Habitación Arena Dorada</h1>
             <p class="descripcion">De estilo tropical y acogedor, con balcón privado hacia el mar. Incluye cama king,
                 sofá, escritorio y decoración en tonos cálidos que resaltan el ambiente playero.</p>
-            <p class="precio">$250.000 <span>/Noche</span></p>
+            <h2 class="precio">$250.000 <span>/Noche</span></h2>
             <div class="camas">
-                <p>🛏️ King Size Bed</p> <p>🛜 Free WiFi</p> <p>👥 2 Person</p>
+                <div class="p">🛏️ King Size Bed</div> <div class="p">🛜 Free WiFi</div> <div class="p">👥 2 Person</div>
             </div>
             <button>Reservar Ahora</button>
         </div>
@@ -72,9 +72,9 @@
             <h1>Suite Luna de Miel</h1>
             <p class="descripcion">Romántica y sofisticada, con jacuzzi privado junto a un gran ventanal con vista al
                 mar. Ideal para parejas, cuenta con cama king, minibar y detalles contemporáneos.</p>
-            <p class="precio">$400.000 <span>/Noche</span></p>
+            <h2 class="precio">$400.000 <span>/Noche</span></h2>
             <div class="camas">
-                <p>🛏️ King Size Bed</p> <p>🛜 Free WiFi</p> <p>👥 2 Person</p>
+                <div class="p">🛏️ King Size Bed</div> <div class="p">🛜 Free WiFi</div> <div class="p">👥 2 Person</div>
             </div>
             <button>Reservar Ahora</button>
         </div>
@@ -84,9 +84,9 @@
             <h1>Habitación Platinum</h1>
             <p class="descripcion">Moderna y funcional, con dos camas matrimoniales, decoración minimalista en tonos
                 neutros y un gran ventanal que ilumina naturalmente con vista al mar</p>
-            <p class="precio">$200.000 <span>/Noche</span></p>
+            <h2 class="precio">$200.000 <span>/Noche</span></h2>
             <div class="camas">
-                <p>🛏️ King Size Bed</p> <p>🛜 Free WiFi</p> <p>👥 2 Person</p>
+                <div class="p">🛏️ King Size Bed</div> <div class="p">🛜 Free WiFi</div> <div class="p">👥 2 Person</div>
             </div>
             <button>Reservar Ahora</button>
         </div>
@@ -96,9 +96,9 @@
             <h1>Suite Real</h1>
             <p class="descripcion">Amplia y luminosa, con cama king, sofá pequeño, grandes ventanas y un espejo
                 decorativo. El diseño mezcla madera y tonos tierra, creando un ambiente cálido y natural.</p>
-            <p class="precio">$300.000 <span>/Noche</span></p>
+            <h2 class="precio">$300.000 <span>/Noche</span></h2>
             <div class="camas">
-                <p>🛏️ King Size Bed</p> <p>🛜 Free WiFi</p> <p>👥 2 Person</p>
+                <div class="p">🛏️ King Size Bed</div> <div class="p">🛜 Free WiFi</div> <div class="p">👥 2 Person</div>
             </div>
             <button>Reservar Ahora</button>
         </div>
@@ -139,6 +139,10 @@
         background-color: #ffffff;
         overflow: hidden;
         width: 2000px;
+    }
+
+    body{
+        margin:0;
     }
 
     .padre {
@@ -268,16 +272,18 @@
         color: #555;
     }
 
-    .camas {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
+    .camas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2px;
         font-size: 14px;
         color: #555;
-
         position: relative;
-        top: -10px;
+        top: -5px;
+        text-align: center;
     }
+
+
 
     button {
         background-color: #c09f34d5;
@@ -508,4 +514,16 @@
   }
 }
 
+@media(max-width:450px){
+  .links{
+    font-size: 14px;
+  }
+}
+
+@media(max-width:360px){
+    .links{
+    font-size: 12px;
+    gap: 8px;
+  }
+}
 </style>
